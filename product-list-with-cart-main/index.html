@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="desserts">
+        <h1>Desserts</h1>
+        <div class="product-container"></div>
+      </section>
+      <section class="cart">
+        <h2>Your Cart (0)</h2>
+        <div class="empty-cart">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="empty-cart"
+          />
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="orders-container cart-orders-container"></div>
+      </section>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.
+      <br />
+    </footer>
+    <div class="order-confirmed hidden">
+      <header>
+        <img src="assets/images/icon-order-confirmed.svg" alt="confirmed" />
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+      </header>
+      <div class="orders">
+        <div class="orders-container confirm-orders-container"></div>
+        <div class="order-total">
+          <p class="order-total-label">Order Total</p>
+          <p class="order-total-price">$0</p>
+        </div>
+      </div>
+      <button class="btn-new-order btn-order">Start New Order</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>
