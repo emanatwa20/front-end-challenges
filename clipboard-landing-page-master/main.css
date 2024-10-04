@@ -332,3 +332,82 @@ footer .container .social li a img {
     height: 40px;
 
 }
+
+
+@media (max-width: 768px) {
+    header {
+        height: auto; 
+        background-image: url(./images/bg-header-mobile.png); 
+        background-size: cover; 
+    }
+
+    header .container h1 {
+        font-size: 30px; 
+    }
+
+    header .container p,
+    .heading p,
+    .sec2 p,
+    .sec4 p {
+        width: 90%; 
+        font-size: 15px; 
+    }
+
+    .sec2 .row {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .sec2 .image,
+    .sec2 .text {
+        width: 100%; 
+    }
+
+    .sec2 .image img {
+        left: 0;
+    }
+
+    .sec4 .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .sec4 .container .box {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+
+    footer .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer .container .links,
+    footer .container .social {
+        width: 100%; 
+        justify-content: center; 
+    }
+
+    footer .container .social {
+        margin-top: 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header .container h1 {
+        font-size: 24px; 
+    }
+
+    .heading h2 {
+        font-size: 24px; 
+    }
+
+    .sec3 img {
+        width: 80%; 
+    }
+
+    footer .container img {
+        width: 50px;
+        height: 50px;
+    }
+}
